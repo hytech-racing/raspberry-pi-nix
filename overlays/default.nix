@@ -9,7 +9,7 @@
 final: prev:
 let
   versions = {
-    v6_6_51.src = rpi-linux-stable-src;
+    v6_12_22.src = rpi-linux-stable-src;
     v6_6_78.src = rpi-linux-6_6_78-src;
     v6_12_17 = {
       src = rpi-linux-6_12_17-src;
