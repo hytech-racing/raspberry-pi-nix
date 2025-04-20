@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     rpi-linux-stable-src = {
       flake = false;
-      url = "github:raspberrypi/linux/stable_20241008";
+      url = "github:hytech-racing/linux/rpi-6.6.y"; # Custom
     };
     rpi-linux-6_6_78-src = {
       flake = false;
