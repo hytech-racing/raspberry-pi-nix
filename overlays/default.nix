@@ -1,6 +1,4 @@
 { rpi-linux-stable-src
-, rpi-linux-6_6_78-src
-, rpi-linux-6_12_17-src
 , rpi-firmware-src
 , rpi-firmware-nonfree-src
 , rpi-bluez-firmware-src
@@ -10,19 +8,6 @@ final: prev:
 let
   versions = {
     v6_12_22.src = rpi-linux-stable-src;
-    v6_6_78.src = rpi-linux-6_6_78-src;
-    v6_12_17 = {
-      src = rpi-linux-6_12_17-src;
-      patches = [
-        {
-          name = "remove-readme-target.patch";
-          patch = final.fetchpatch {
-            url = "https://github.com/raspberrypi/linux/commit/3c0fd51d184f1748b83d28e1113265425c19bcb5.patch";
-            hash = "sha256-v7uZOmPCUp2i7NGVgjqnQYe6dEBD+aATuP/oRs9jfuk=";
-          };
-        }
-      ];
-    };
   };
   boards = [ "bcm2711" "bcm2712" ];
 

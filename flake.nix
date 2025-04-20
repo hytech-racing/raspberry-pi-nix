@@ -7,14 +7,6 @@
       flake = false;
       url = "github:hytech-racing/linux/rpi-6.12.y"; # Custom
     };
-    rpi-linux-6_6_78-src = {
-      flake = false;
-      url = "github:raspberrypi/linux/rpi-6.6.y";
-    };
-    rpi-linux-6_12_17-src = {
-      flake = false;
-      url = "github:raspberrypi/linux/rpi-6.12.y";
-    };
     rpi-firmware-src = {
       flake = false;
       url = "github:raspberrypi/firmware/1.20241008";
